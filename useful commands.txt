@@ -1,11 +1,13 @@
+#build command
 docker build -t ebowla .
 
+#how to run
 docker run -v .:/3bowla/host --rm ebowla mimikatz.exe
 
-docker image list
 
+#other useful commands...
 docker load --input ebowla.img --quiet
-
 docker image list
 
+#delete images
 docker rmi -f $(docker images -aq)
