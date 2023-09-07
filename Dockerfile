@@ -30,4 +30,4 @@ COPY entrypoint.sh .
 
 RUN chmod +x /3bowla/entrypoint.sh
 
-ENTRYPOINT /3bowla/entrypoint.sh
+ENTRYPOINT ["/3bowla/entrypoint.sh"]
