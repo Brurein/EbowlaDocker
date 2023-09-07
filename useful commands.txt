@@ -11,3 +11,6 @@ docker image list
 
 #delete images
 docker rmi -f $(docker images -aq)
+
+#get shell in image
+docker run -v .:/3bowla/host -it --entrypoint /bin/bash ebowla
